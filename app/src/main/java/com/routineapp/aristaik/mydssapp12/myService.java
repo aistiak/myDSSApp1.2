@@ -37,6 +37,7 @@ public class myService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        Log.d("arif","service destroyed ");
         Toast.makeText(this,"service destroyed",Toast.LENGTH_LONG).show();
     }
 

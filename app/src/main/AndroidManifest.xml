@@ -25,7 +25,9 @@
             </service>
 
 
-        <receiver android:name=".OutgoingCallReceiver" >
+        <receiver android:name=".OutgoingCallReceiver"
+            android:enabled="true"
+            android:process="my_process">
             <intent-filter>
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
             </intent-filter>
